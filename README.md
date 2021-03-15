@@ -144,8 +144,8 @@ Suppose we want to access all rows in which the variable **"school"** is "F" but
 
 ##### Contributors to this Document:
 
--Tristan John Girao
--Arvilyn Mellizas
+- Tristan John Girao
+- Arvilyn Mellizas
 
         
         
