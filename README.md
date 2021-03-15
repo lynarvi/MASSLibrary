@@ -117,11 +117,35 @@ Suppose we want to get the summary of the variable **School**.
          summary(painters$School)
          A  B  C  D  E  F  G  H 
         10  6  6 10  7  4  7  4 
+       
 
+## subset()
+`subset()` function can be used to select and exclude variables and observations.
 
+For instance, we want to access all the painters for which it holds **School == "F"**.
+
+        painters_subset = subset(painters,School == "F")
+        painters_subset
+                   Composition Drawing Colour Expression School
+        Durer                8      10     10          8      F
+        Holbein              9      10     16         13      F
+        Pourbus              4      15      6          6      F
+        Van Leyden           8       6      6          4      F
+                
+Suppose we want to access all rows in which the variable **"school"** is "F" but restrict the data set fo the first two variables.
+
+        subset(painters, School=="F",select=Composition:Drawing)
+                   Composition Drawing
+        Durer                8      10
+        Holbein              9      10
+        Pourbus              4      15
+        Van Leyden           8       6
         
-        
-        
-        
+
+##### Contributors to this Document:
+
+Tristan John Girao
+Arvilyn Mellizas
+
         
         
